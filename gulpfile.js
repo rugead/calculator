@@ -8,6 +8,7 @@ var babelify = require('babelify');
 var exorcist = require('exorcist');
 var browserSync = require('browser-sync').create();
 var cleanCSS = require('gulp-clean-css');
+var ghPages = require('gulp-gh-pages');
 
 function bundle (bundler) {
   return bundler
@@ -74,6 +75,11 @@ gulp.task('watch', function () {
       port: 3010
   });
 
+});
+
+gulp.task('gh', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('default', ['css', 'pug', 'watch']);
