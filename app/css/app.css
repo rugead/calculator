@@ -3,20 +3,41 @@ body {
 	color: black;
   font-family: ubuntu;
 }
-.header {
+
+.content {
+	display: flex;
+  flex-direction: column;;
+  margin: 2vh 2vw 0 2vw;
+  flex-wrap: wrap;
+  justify-content: space-between;;
+  align-items: stretch;;
+  align-content: center;
+}
+
+.header, h1 {
+  display: flex;
+  flex: 1 0 auto;
   color: orange;
 }
 
-.content {
-	width: 100vw;
-	margin: 4vh 0vw 0 0vw;
-}
 .column {
 	display: flex;
+  flex: 1 0 auto;
 	flex-direction: column;
-	justify-content: center;
+	/*justify-content: center;*/
 }
 
+.footer {
+  display: flex;
+  flex: 1 0 auto;
+  color: orange;
+}
+
+.footer .ubuntu {
+  font-family: ubuntu;
+  color: orange;
+  font-size: 0.75em;
+}
 .showResult {
 	flex: 1;
 	background-color: #ccc;
@@ -77,12 +98,15 @@ body {
   flex-wrap: wrap;
 }
 
+
+
+
 /* Tabletts */
 @media only screen and (min-width: 760px) {
 	/*.content { max-width: 760px }*/
   .content {
   	width: 80vw;
-  	margin: 4vh 10vw 0 10vw;
+  	margin: 2vh 10vw 0 10vw;
   }
 
 }
@@ -92,7 +116,7 @@ body {
 	/*.content { max-width: 980px }*/
   .content {
   	width: 60vw;
-  	margin: 4vh 20vw 0 20vw;
+  	margin: 2vh 20vw 0 20vw;
   }
 
 }
@@ -101,7 +125,7 @@ body {
 @media only screen and (min-width: 1280px) {
   .content {
   	width: 40vw;
-  	margin: 4vh 30vw 0 30vw;
+  	margin: 2vh 30vw 0 30vw;
   }
 
 }
