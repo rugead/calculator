@@ -8,8 +8,8 @@ body {
 }
 
 .content {
-	width: 60vw;
-	margin: 4vh 20vw 0 20vw;
+	width: 100vw;
+	margin: 4vh 0vw 0 0vw;
 }
 .column {
 	display: flex;
